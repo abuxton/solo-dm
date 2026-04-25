@@ -1,0 +1,17 @@
+# markdownlint configuration for solo-dm
+# See: https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md
+
+default: true
+
+# Disable strict line-length enforcement — this is a prose documentation project
+MD013: false
+
+# Allow duplicate headings in different sections
+MD024:
+  siblings_only: true
+
+# Allow inline HTML (used for badges and diagrams)
+MD033: false
+
+# Allow multiple top-level headings (README uses only one, but skills may vary)
+MD041: false
